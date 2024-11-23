@@ -147,10 +147,10 @@ button:active{
 
 .menu--open{
     max-height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
-.menu--open, menu__backdrop {
+.menu--open .menu__backdrop {
     display:flex;
     visibility: visible;
     opacity: 1;
@@ -324,7 +324,6 @@ FEATURES
 
 .book{
     width: 25%;
-    padding: 24px;
 }
 
 .book__img{
