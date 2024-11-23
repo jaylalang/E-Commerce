@@ -128,7 +128,7 @@ button:active{
     display: none;
 }
 
-.menu__backdrop{
+.menu__backdrop {
     position: absolute;
     background-color:#242424;
     top: 0;
@@ -136,22 +136,23 @@ button:active{
     right: 0;
     bottom: 0;
     z-index: 100;
-    display: flex;
+    display: flex; 
+   justify-content: center;
     align-items: center;
-    justify-content: center;
     visibility: hidden;
     transition: all 300ms ease;
     opacity: 0;
     transform: translate(100%);
 }
 
-.menu--open{
+.menu--open {
+    display: flex;
     max-height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .menu--open .menu__backdrop {
-    display:flex;
+    
     visibility: visible;
     opacity: 1;
     transform: translate (0);
